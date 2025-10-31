@@ -4,22 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio Website</title>
 </head>
 <body>
     <header>
-
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          
+            <div class="social-icons">
+                <a href="https://instagram.com/dzki.k" target="_blank" class="icon instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                  <a href="https://github.com/Deffinitelyoriginal" target="_blank" class="icon github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+              </div>
+          </nav>
     </header>
 
     <main>
-        <h1>Hello World</h1>
+        <section class="hero">
+          <div class="hero-content">
+            <div class="text-content">
+              <h1>Dzaki</h1>
+              <p>Web Developer in progress</p>
+              <button class="btn">Lihat Portfolio</button>
+            </div>
+            <div class="image-content">
+              <img src="images/Dzaki.1.webp" alt="Dzaki">
+            </div>
+          </div>
+      
+          <section class="skills-section">
+            <h3>Programming Skills</h3>
+            <ul>
+              <li class="skills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+                Python
+              </li>
+              <li class="skills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+                HTML
+              </li>
+              <li class="skills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+                CSS
+              </li>
+              <li class="skills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+                JavaScript
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="about-section">
+            <div class="about-text">
+              <i class="description-text">A 16 year old senior highschooler, whose hobby is coding...</i>
+            </div>
+            <div class="coding-img">
+              <img src="/images/coding_p.webp" alt="coding_picture">
+            </div>
+          </section>
+          
+        <!-- 🧩 Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+              <div 
+                class="project-card left" 
+                data-aos="fade-right"
+                >
+                <img src="images/quiz.webp" alt="Quiz Website Preview">
+                <h3>Math-Quiz Website</h3>
+                <p>A fun quiz website built using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/" target="_blank" class="btn">View on GitHub</a>
+              </div>
+          
+              <div class="project-card right" data-status="In Progress">
+                <img src="images/portfolio.webp" alt="Portfolio Website Preview">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio to showcase my skills and projects.</p>
+                <a href="https://github.com/" target="_blank" class="btn">View on GitHub</a>
+              </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <p>Got a project or just want to say hi? Send me a message below </p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+                </div>
+            
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+            
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+            
+                <button type="submit" class="btn">Send</button>
+                <p id="formResponse" class="form-response"></p>
+            </form>
+            
+        </section>
     </main>
+      
 
-    <footer>
+    <footer class="footer">
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-    </footer>
+            <div class="social-icon-footer">
+                <a href="https://instagram.com/dzki.k" target="_blank" class="icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+
+                <a href ="https://github.com/Deffinitelyoriginal" target="_blank" class="icon github">
+                    <i class="fa-brands fa-github"></i>
+
+                <a href ="https://discord.com/Sus boi_2" target="_blank" class="icon discord">
+                    <i class="fa-brands fa-discord"></i>
+            </div>
+      </footer>
+      
 
     <script src="./js/main.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+        
 </body>
 </html>
