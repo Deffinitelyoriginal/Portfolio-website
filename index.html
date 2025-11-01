@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+
+      [data-aos] {
+        transition-property: transform, opacity !important;
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+      }
+
+    </style>
     <title>Portfolio Website</title>
 </head>
 <body>
@@ -79,7 +88,8 @@
             </div>
           </section>
           
-        <!-- 🧩 Projects Section -->
+          
+        <!-- 🧩 Projects -->
         <section id="projects">
             <h2>My Projects</h2>
             <div class="projects-grid">
@@ -93,7 +103,8 @@
                 <a href="https://github.com/" target="_blank" class="btn">View on GitHub</a>
               </div>
           
-              <div class="project-card right" data-status="In Progress">
+              <div class="project-card right" data-status="In Progress"
+              data-aos="fade-left">
                 <img src="images/portfolio.webp" alt="Portfolio Website Preview">
                 <h3>Portfolio Website</h3>
                 <p>A personal portfolio to showcase my skills and projects.</p>
@@ -163,7 +174,12 @@
         </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+            duration: 800,       
+            easing: 'ease-in-out',
+            once: false,          
+            mirror: true          
+          });
           </script>
         
 </body>
