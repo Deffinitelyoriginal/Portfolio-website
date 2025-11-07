@@ -30,13 +30,7 @@ footer .footer-links {
     margin-top: 1rem;
   }
 
-  .social-icon-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin-top: 25px;
-  }
+  
 
   .footer-links {
     display: flex;

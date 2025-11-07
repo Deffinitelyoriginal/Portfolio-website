@@ -1,0 +1,19 @@
+.icon.instagram:hover {
+    color: #e1306c;
+  }
+
+  .icon.discord:hover {
+      color:rgba(46, 204, 113, 0.4)
+  }
+
+  .icon.github:hover {
+    color :blue;
+  }
+
+  .social-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 25px;
+  }
