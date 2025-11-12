@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #0d0d0d;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition : all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navlinks,
+    .social-icons {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #111;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        gap: 1rem;
+        animation: slideDown 0.3s ease;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

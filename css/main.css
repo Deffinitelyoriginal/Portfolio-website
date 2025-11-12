@@ -13,10 +13,11 @@
   .skills-section ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* ✅ flexible grid */
-    gap: 20px;
+    gap: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
+    /* border: 2px solid red; */
   }
   
   @media screen and (max-width: 768px) {

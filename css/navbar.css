@@ -2,27 +2,29 @@
     display: flex;
     justify-content: space-between;  /* spread out left and right */
     align-items: center;
-    padding: 20px 110px;
-    background-color: #0b0b0b;     /* match your dark theme */
-    border-bottom: 3px solid #450693; /* choose your color */
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    padding: 1rem 2rem;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px;                       /* spacing between nav items */
-    margin: 0;
-    padding: 0;
+    gap: 2rem;
+  }
+
+  .logo{
+        font-size: 1.5rem;
+        /* font-weight: bold; */
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600px;
+        font-style: normal;
   }
   
   .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
   }
   
   .nav-links a:hover {
@@ -31,7 +33,22 @@
   
   .social-icons {
     display: flex;
-    align-items: center;
     gap: 1rem;
+  }
+
+  .icon i {
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3;
+  }
+
+  .icon:hover o {
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3;
+  }
+
+  .icon:hover i {
+      color: #8b5cf6;
   }
   

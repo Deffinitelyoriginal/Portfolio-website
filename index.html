@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <!-- <link rel="stylesheet" href="./css/header.css"> -->
+    <link rel="stylesheet" href="./css/header2.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/navbar.css">
@@ -30,7 +34,8 @@
 </head>
 <body>
     <header>
-        <!-- <nav class="navbar">
+        <nav class="navbar">
+          <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#skills-section">Skills</a></li>
@@ -47,11 +52,17 @@
                     <span>Github</span>
                 </a>
               </div>
-          </nav> -->
+
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="hero-content">
             <div class="text-content">
               <h1>Dzaki</h1>
@@ -63,7 +74,7 @@
             </div>
           </div> 
       
-          <section class="skills-section">
+          <section class="skills-section" id="skills-section">
             <h3>Programming Skills</h3>
             <ul>
               <li class="skills">
@@ -186,6 +197,14 @@
             once: false,          
             mirror: true          
           });
+          </script>
+          <script>
+            const burger = document.querySelector('.burger');
+            const navbar = document.querySelector('.navbar');
+          
+            burger.addEventListener('click', () => {
+              navbar.classList.toggle('active');
+            });
           </script>
         
 </body>
