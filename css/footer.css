@@ -1,11 +1,17 @@
 footer {
-    background-color: #0b0b0b;
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem; /* increased padding to make it taller */
-    font-size: 0.95rem;
-    border-top: 1px solid #1f1f1f;
+  background-color: #0b0b0b;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+
+  /* neon pink border glow */
+  border-top: 2px solid #ff4fa3;
+  box-shadow: 0 -2px 10px #ff4fa3,
+              0 -2px 20px rgba(255, 79, 163, 0.7),
+              0 -2px 35px rgba(255, 79, 163, 0.5);
 }
+
 
 footer .footer-links {
     margin-bottom: 1.5rem;

@@ -1,9 +1,18 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;  /* spread out left and right */
-    align-items: center;
-    padding: 1rem 2rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background: rgba(255, 67, 161, 0.08); /* faint pink mist */
+  border-bottom: 2px solid #ff7edb;      /* sakura pink */
+  box-shadow:
+    0 0 10px #ff7edb,
+    0 0 25px #ff7edb,
+    0 0 35px rgba(255, 126, 219, 0.4);
+  backdrop-filter: blur(6px);
+}
+
   
   .nav-links {
     list-style: none;
@@ -29,8 +38,39 @@
   
   .nav-links a:hover {
     color: #4ade80;                  /* green hover color */
+  } 
+  
+
+   /* .nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
   }
   
+  /* Neon underline glow */
+  /* .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ff4fd4; 
+    box-shadow: 0 0 8px #ff4fd4, 0 0 16px #ff4fd4;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4fd4;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }  */
+  
+
   .social-icons {
     display: flex;
     gap: 1rem;

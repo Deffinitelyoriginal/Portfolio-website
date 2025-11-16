@@ -55,4 +55,22 @@
     }
   }
 
- 
+  .neon-text {
+    color: #ff4fd8;
+    text-shadow:
+        0 0 5px #ff4fd8,
+        0 0 10px #ff4fd8,
+        0 0 20px #ff4fd8,
+        0 0 40px #ff1ec4,
+        0 0 80px #ff1ec4;
+    transition: 0.3s;
+}
+
+.neon-text:hover {
+    text-shadow:
+        0 0 10px #ff4fd8,
+        0 0 20px #ff4fd8,
+        0 0 40px #ff1ec4,
+        0 0 80px #ff1ec4,
+        0 0 120px #ff1ec4;
+}
