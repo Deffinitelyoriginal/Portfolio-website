@@ -1,0 +1,63 @@
+/* .mascot {
+    position: absolute;
+    width: 30px;
+    opacity: 0.9;
+    pointer-events: none;
+    user-select: none;
+} */
+  
+.mascot-contact-right {
+    top: 60px;
+    right: -20px;
+}
+
+.mascot-contact-left {
+    top: 60px;
+    left: -20px;
+}
+
+  /* Core mascot styling */
+.mascot {
+    position: relative;
+    width: 90px;
+    opacity: 0.9;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Make sections able to hold absolute elements */
+.hero,
+.skills-section,
+.about-section,
+.contact-section,
+#projects,
+.footer {
+    position: relative;
+}
+
+/* Custom positions */
+.mascot-hero {
+    top: 20px;
+    right: 40px;
+}
+
+.mascot-skills {
+    bottom: -20px;
+    left: 10px;
+    transform: rotate(-10deg);
+}
+
+.mascot-about {
+    top: 90px;
+    right: -2px;
+}
+
+.mascot-projects {
+    bottom: -30px;
+    right: 15px;
+}
+
+.mascot-footer {
+    top: -30px;
+    left: 20px;
+}
